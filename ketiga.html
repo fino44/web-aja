@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Honda Video Gallery</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "honda-red": "#CC0000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for better aesthetic */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white font-display min-h-screen flex flex-col">
+<!-- Navbar: Honda Red Style -->
+<header class="bg-red-700 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <span class="text-xl">HONDA</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-white font-medium">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="kedua.html" class="hover:underline">Product</a>
+        <a href="ketiga.html" class="hover:underline">Video</a>
+        <a href="keempat.html" class="hover:underline">News</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <label class="hidden md:flex flex-col min-w-40 h-10 w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white overflow-hidden shadow-sm">
+            <div class="text-[#757575] flex items-center justify-center pl-3">
+              <span class="material-symbols-outlined text-[20px]">search</span>
+                </div>
+                <input class="flex w-full flex-1 bg-transparent border-none focus:ring-0 text-primary text-sm font-medium px-2 h-full placeholder:text-[#999]" placeholder="Search models..."/>
+                </div>
+                </label>
+                <div class="flex gap-2">
+                </div>
+                </div>
+                </div>
+                </div>
+              
+      
+        
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden text-white text-2xl">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-red-800">
+    <a href="index.html" class="block px-4 py-3 text-white">Home</a>
+    <a href="kedua.html" class="block px-4 py-3 text-white">Product</a>
+    <a href="ketiga.html" class="block px-4 py-3 text-white">News</a>
+    <a href="keempat.html" class="block px-4 py-3 text-white">Video</a>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden')
+  }
+</script>
+<!-- Main Content Area -->
+<main class="flex-grow flex flex-col items-center w-full">
+<div class="w-full max-w-[1200px] px-5 lg:px-10 py-8 lg:py-12">
+<!-- Page Heading -->
+<div class="mb-8 md:mb-12">
+<h1 class="text-primary dark:text-white text-3xl md:text-5xl font-black tracking-tight mb-3">
+                    Video Gallery
+                </h1>
+<p class="text-gray-600 dark:text-gray-400 text-lg md:text-xl font-normal max-w-2xl">
+                    Experience the Power of Dreams through our latest innovations, racing highlights, and stories.
+                </p>
+</div>
+<!-- Filter Chips -->
+<div class="flex flex-wrap gap-3 mb-10">
+<button class="h-9 px-5 rounded-full bg-primary text-white text-sm font-bold hover:bg-primary/90 transition-colors">
+                    All
+                </button>
+<button class="h-9 px-5 rounded-full bg-gray-200 dark:bg-white/10 text-primary dark:text-white text-sm font-medium hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">
+                    Vehicles
+                </button>
+<button class="h-9 px-5 rounded-full bg-gray-200 dark:bg-white/10 text-primary dark:text-white text-sm font-medium hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">
+                    Racing
+                </button>
+<button class="h-9 px-5 rounded-full bg-gray-200 dark:bg-white/10 text-primary dark:text-white text-sm font-medium hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">
+                    Innovation
+                </button>
+<button class="h-9 px-5 rounded-full bg-gray-200 dark:bg-white/10 text-primary dark:text-white text-sm font-medium hover:bg-gray-300 dark:hover:bg-white/20 transition-colors">
+                    Robotics
+                </button>
+</div>
+<!-- Video Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10">
+<!-- Video Item 1 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Red sports car driving fast on a race track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCl8B-FD2IFLb3EYkaLogmvOq_LEXN6Z_f9hKxXnA1c_v_bxEMTw0b125J-93cRY6GxVUqBHv55hhGBT-ZKHEVCgJeQ4WkpqXSOFvnwg6CvdRUkrMSHCgyk9SgEAzVeYWaFolgqNnAr6eYzh6k9Mc5M85_R35uFja-UcK7qFVWD0SgKliQlxz9e2zTagLMeDl7eIEwjUBd3hIAiIcxc3ou8Kev22mzJ_SB-73pFoJYxD809V2Ixum9mFdA2CQC4Q7lfh8RrBXPAqZk");'>
+</div>
+<!-- Overlay Play Button -->
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">3:42</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">2024 Civic Type R - The Nürburgring Lap</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Racing • 2 days ago</p>
+</div>
+</article>
+<!-- Video Item 2 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Private jet flying above clouds during sunset" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGrY0Pfna6ePOUGz-x4ZFYDzzcL1EoCKo2UFrVLgDeRfe3or_hR163RCSCUZCwG8VXWS4miZfPcJtzsPkXuMoGfJbsNP-CTs87anXkQoxG5S5fHefpWvA90oFJLvTeC8Ye3MIfHBArWsaPp_Qhq8v2ZB4bRLIJ6_KKr6bCWsKl504VcPXXjtIuSKdJzEax3nxgX4XQDoKe-Ypld8C1zpRxiLpjR-X6TKfpBGWW8XCR4u2icL5Lvqdud-eJBpLsu18AD9yDSKTkZsQ");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">5:18</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">Honda Jet Elite II - Innovation Takes Flight</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Aviation • 1 week ago</p>
+</div>
+</article>
+<!-- Video Item 3 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Futuristic robot hand detail shot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBERbpI1KDFzxQaAYx8xX9SzvaMg2PiOYgDG6PzwfHlgbVaTELMFU6HxIt9FS-KDDcNUWoG5_WtIqX9nG4FggBqkt2vQF_yUMm929VQdOmJ__6r2Q20lTE4n3ErL6iLghShvZNSrRW-xPH9K2gVJbfAt-7rmAAVXDtmesw-dsdyaS2CgFnxzpB9yAsBDT2-kT0wSrwNqdIR64fESXra5bCoJPREO3L0gwHdHwzHiRxOsYlnil1cuLIDIENORxlG9Qz9l3DvB_mE0Ro");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">12:05</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">ASIMO: The Journey of Mobility</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Robotics • 2 weeks ago</p>
+</div>
+</article>
+<!-- Video Item 4 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Electric scooter parked on city sidewalk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBytYHaBA6hCo6HCTK0KcbwphHumOK7fxY5J5MYxqF6wbc2p_fewlm1sj5r_6AhvqOAYrhSwLDILFbR5Xa5RaGFGRxVm-3pLMTi8F0O4KqYIkva9mXx4o0l4Hkk6BrSN0ms_RAVrJOTmZIOtrUjcPQ9eEgwyJokTSkAyRC2QkwbVsYbIgqV4bIbwhLxFFPLf6sKD0voI46NJYD2bug5Ixl7OeXijRw84CVKFYdOb8twiU6mevnaYq-xOk9MWXm-s_bbtSsIWcb1RJs");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">2:15</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">Motocompacto: Fun on the Run</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Product • 3 weeks ago</p>
+</div>
+</article>
+<!-- Video Item 5 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Formula 1 race car speeding on track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg6Lfr8vTYGxlnYAulycEk9cK4CqU8G9LCzWE9C2Id-iphoqz5NWaBZbrDTsweB1CDKDvutTPQrMxRC2mi19e_A8x9YLvruEdwqh5IbRgahxQBsF9TEE3j4TPcJ2kPZh3T1UAQ96xHBSSZqhaFHimM-IGtjssxqZ2gbf0XeUQP6TmXnQBdCZRSzvma-PvRbKge1JUMbyuynieCLxTDG9QJzACa5n9tty_cre8Ewx-VB31M0YsZnZwpzwoFCplyJ48ITePjZLSMDsk");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">4:50</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">F1 2024 Season Preview</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Racing • 1 month ago</p>
+</div>
+</article>
+<!-- Video Item 6 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Abstract inspirational lights and smoke background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBfe6xk4eV1L--hShKD-W95ucMMtCvy6sP_ENuaV6LzM4V0JEmefHPDq7shRi0qGDtoFenIaVmg0qbhROt9HVeM9lJr_74YmhWD5LYU5I3FUuI30cqxcn0YwXpEMFJxbmIhvAAWqBiNy_B4VyVtz-rr1X-_jBYFz5wkCxns5wfKi8Tt5CaDaatRk8b9ADn2JOcvsdQAuXWpu4OLuj7QDQWtvOsbswfgk5xdkfWnSS6RppLT2jgio85Kf53IsisHWVsJTg6sDRFKAsk");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">8:30</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">The Power of Dreams Origin Story</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Brand • 1 month ago</p>
+</div>
+</article>
+<!-- Video Item 7 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Modern electric vehicle charging station" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyDVTHj9LIQLd6yvIgnp5h_K-GaLmfsq_qv3BDWl9qtEcjZ1ywl_WivU_-pOd08BQyW5knbulMMnCzZunq62ray4WYhwZPZM3ReF3tM-zAKJzaDWJ2E2dbDmqy2GMnbBb9Lf2GXhoVfaBfcOpwt3pJxJ0CdZzSlpfqiD2Uj5meQIRu2VStkLvZHE_FPUY8q9NtXqhQbjaihc7z28WQC_5W-sUIFLctX7aNKnuj8cPJ-vd_aDr0mqWffel3NVMCbf_v365UQHJ54Fk");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">6:12</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">Prologue: The Electric Future</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">EV • 2 months ago</p>
+</div>
+</article>
+<!-- Video Item 8 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Engineer working on hydrogen fuel cell technology" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDroPd-yxWKNJY4Sv5XrikTZtgi3m5xzVxAgWp1dkMsBzMwCHCReY--6NJwKD-KlK3a4gBjjooYwJgZqIGNS22V6MgTPnyKj9RCS479pvU4yYT95_EUWmVJGcqmB4mcqLRjIF3LC1q_YlgwN-b0FyoXvu_7uMpj78cIlZiRJGh9evTSUpMqoc9uZTXROGOt2mGN57JABEOnxXvzjUclZL5UVmbUUa2VEGl2JXdzWmbOk0iTSJkbDSxgXv4BGpJiE_LwAVg_PW51FQM");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">9:45</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">Hydrogen Fuel Cell Technology</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Technology • 3 months ago</p>
+</div>
+</article>
+<!-- Video Item 9 -->
+<article class="group cursor-pointer flex flex-col gap-3">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 shadow-sm">
+<div class="w-full h-full bg-center bg-cover transition-transform duration-500 group-hover:scale-105" data-alt="Safety crash test dummy in vehicle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGF5j66lCWCjD8Wnvk01x0LPUHkSw8JpL0F8sjB5dk9sgycs-4fOC1up9LHrtoLvSBBZzGQ_q0DNwBy_ytRfQs6jahI70PQ8X9nRKpFM_g3mU1GB7FKkkVv0NB7qezO3HgO6fMrnL2Sc_XDLfmmiSIOMY6yig8hD7ifBdK7CC3cYyWxJMKoWIADFLdeueR934gShhpz5mdI7Jb9QHMBCPlDOkwWi0ufumJjAwYajnlNh9i9bAvS6eapx7pYhjNI5RFyesNhM2JrlE");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-white/90 text-honda-red flex items-center justify-center pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</div>
+</div>
+<span class="absolute bottom-2 right-2 bg-black/70 text-white text-xs font-bold px-2 py-1 rounded">4:20</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold leading-tight group-hover:text-honda-red transition-colors line-clamp-2">Safety for Everyone</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">Safety • 4 months ago</p>
+</div>
+</article>
+</div>
+<!-- Load More Button -->
+<div class="mt-16 flex justify-center">
+<button class="px-8 py-3 border border-gray-300 dark:border-gray-700 text-primary dark:text-white rounded-lg font-bold hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+                    Load More Videos
+                </button>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8 border-t border-white/10 mt-auto">
+<div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<!-- Brand Col -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<div class="size-6 text-white">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="text-lg font-bold tracking-tight">HONDA</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        The Power of Dreams. Driving the future of mobility through innovation and passion.
+                    </p>
+</div>
+<!-- Links Col 1 -->
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-white mb-1">Company</h4>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">About Us</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Careers</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Sustainability</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Investor Relations</a>
+</div>
+<!-- Links Col 2 -->
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-white mb-1">Support</h4>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Contact Us</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Recall Information</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Owner's Manuals</a>
+<a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Financial Services</a>
+</div>
+<!-- Social Col -->
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-white mb-1">Connect</h4>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Bottom Footer -->
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+<div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm text-gray-500">
+<a class="hover:text-gray-300 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Legal Terms</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Sitemap</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Cookie Settings</a>
+</div>
+<p class="text-gray-600 text-sm">
+                    © 2024 American Honda Motor Co., Inc. All Rights Reserved.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

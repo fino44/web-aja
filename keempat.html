@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Honda News - Latest Updates &amp; Press Releases</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "honda-red": "#CC0000",
+                        "background-light": "#ffffff",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white font-display overflow-x-hidden flex flex-col min-h-screen transition-colors duration-200">
+<!-- Navbar -->
+<header class="bg-red-700 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <span class="text-xl">HONDA</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-white font-medium">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="kedua.html" class="hover:underline">Product</a>
+        <a href="ketiga.html" class="hover:underline">Video</a>
+        <a href="keempat.html" class="hover:underline">News</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <label class="hidden md:flex flex-col min-w-40 h-10 w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white overflow-hidden shadow-sm">
+            <div class="text-[#757575] flex items-center justify-center pl-3">
+              <span class="material-symbols-outlined text-[20px]">search</span>
+                </div>
+                <input class="flex w-full flex-1 bg-transparent border-none focus:ring-0 text-primary text-sm font-medium px-2 h-full placeholder:text-[#999]" placeholder="Search models..."/>
+                </div>
+                </label>
+                <div class="flex gap-2">
+                </div>
+                </div>
+                </div>
+                </div>
+              
+      
+        
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden text-white text-2xl">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-red-800">
+    <a href="index.html" class="block px-4 py-3 text-white">Home</a>
+    <a href="kedua.html" class="block px-4 py-3 text-white">Product</a>
+    <a href="ketiga.html" class="block px-4 py-3 text-white">News</a>
+    <a href="keempat.html" class="block px-4 py-3 text-white">Video</a>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden')
+  }
+</script>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<!-- Breadcrumbs -->
+<nav class="flex flex-wrap gap-2 py-4 mb-2">
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:text-honda-red transition-colors" href="#">Home</a>
+<span class="text-gray-400 dark:text-gray-600 text-sm font-medium">/</span>
+<span class="text-primary dark:text-white text-sm font-semibold">News Room</span>
+</nav>
+<!-- Page Heading -->
+<div class="mb-10">
+<h1 class="text-primary dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-3">
+                Latest News
+            </h1>
+<p class="text-gray-600 dark:text-gray-400 text-lg max-w-2xl font-normal leading-relaxed">
+                Stay updated with the latest announcements, product launches, corporate updates, and technological innovations from Honda.
+            </p>
+</div>
+<!-- Featured Story (Hero Card) -->
+<section class="mb-16">
+<div class="bg-white dark:bg-zinc-900 rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-zinc-800 hover:shadow-md transition-shadow duration-300">
+<div class="flex flex-col lg:flex-row">
+<div class="w-full lg:w-3/5 h-64 lg:h-auto min-h-[320px] bg-center bg-no-repeat bg-cover relative group overflow-hidden" data-alt="Futuristic electric car concept front view in a studio" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrGbJex1vDRQR26zOIMqEK6K0i5qZYlwxcqhVNpb4nK5ww2w1OXLYH-r2nci1KA-4StKdwLGcjGylh1QQPUQUh7a8YOwUu2D8zCbeHY7shQa3HQ8E8px0XS72TbkaYnHfM_6L2id2dSAIV-A2U5dpWq9_rd8bGst5VkoyTAcM71ZRM_kxW6DcuIrI5xaPZAmPtgVXLrjFD_JmS0foWy6G7KZXol_FhTdc8rtE1cEi3a2bNx5fVi6LdFO5S_kwqFkdf1h4YE5ELORc");'>
+<div class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500"></div>
+</div>
+<div class="w-full lg:w-2/5 p-6 lg:p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-honda-red text-white text-xs font-bold px-2.5 py-1 rounded uppercase tracking-wider">Featured</span>
+<span class="text-gray-500 dark:text-gray-400 text-sm font-medium">Oct 12, 2023</span>
+</div>
+<h2 class="text-2xl lg:text-3xl font-bold text-primary dark:text-white leading-tight mb-4 hover:text-honda-red transition-colors cursor-pointer">
+                            Honda Unveils New Electric Concept Series
+                        </h2>
+<p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed mb-6">
+                            A glimpse into the future of sustainable mobility, featuring cutting-edge solid-state battery technology and next-gen autonomous driving capabilities that redefine the driving experience.
+                        </p>
+<button class="self-start flex items-center gap-2 text-honda-red dark:text-red-400 font-bold text-sm uppercase tracking-wider hover:gap-3 transition-all duration-300 group">
+                            Read Full Story
+                            <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Stories Heading -->
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-primary dark:text-white text-2xl font-bold tracking-tight">Recent Stories</h3>
+<div class="flex gap-2">
+<button class="size-8 rounded-full border border-gray-200 dark:border-zinc-700 flex items-center justify-center text-primary dark:text-white hover:bg-gray-100 dark:hover:bg-zinc-800 transition-colors">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+</button>
+</div>
+</div>
+<!-- News Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+<!-- Card 1 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Red civic type r sports car speeding on a race track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEr0f0hMw1WzRuCF5NrsLFznvjgEct-_obBL0o4WD47LQtU_uaZFBn8VcMxezuLy8aQtADfjJgCCQnfg9g_xNcTzywTr3SY4fj_CO2qNXNVg0k_Am96drebXkGyTwF7AYxUIrdzhWmxlQTJYlcSloAth2fBED2A7WGUrYggRSGdjYlOC8CQFA_VupnLRonrEdf9W9iHLde9RR4qaS3PBURR-EM61x3cjK7G8oJYwRipqMZFMTBAOuWMle2xeEJoaIOasyH0A7dxwA");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Product
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Sep 28, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        New Civic Type R Sets Nürburgring Track Record
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        The ultimate performance hatch proves its mettle once again, shattering lap records with improved aerodynamics and power.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Engineers in lab coats working on technology in a modern clean laboratory" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC3GI81IpLrY6dNVN6tnRvkDIsGSa68T7i6bbukccfsJ9MAPluVhax1YbA30UzLoV4q62ttlTA62GvHP2kVneLP_pQQ2RypY1HOItMq-OVqDIqnm7r-E1jN3TJaCwd6sKjQ9PoHsZjCYyT3dLeAwhWLIcKzrhMT8v3Qn_Ed6bHRYDUw3hekAb-jxgWboh7bE6t858hUvGFSls_bHbso43-ZKZ3Pjn9ts-6L6VJopq4pu-BfhM06ayZzfF0NDbiOiLC4YFq0SoOxhFM");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Innovation
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Sep 15, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        Honda's Safety Vision 2050: Zero Collisions
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        Announcing new AI-driven safety systems designed to eliminate traffic collision fatalities involving Honda motorcycles and automobiles.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Digital tablet displaying rising sales charts and graphs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZU9oNKNeXtqAJEpnYWCnQhUr6uhQ6zHigO46zqXLO78dRIxUPoRuW5_yXhN3Wqb2I85IMA8mDWwTH69Cqaujp1rlP2CqLk2xQGHHbAAgixI0gUNYsLz7GPQbEu8EX_ca_-EP3NuxsQIi_0hj7PSgHhDrgE020z2_Ob0Kid45dAYfwAATU-2Lm4p-yg37s_qiipPDfmQ_SvjCJTvD-SILGBmZYgJxMCSS7eKRcb8PKo6jRLYqqliKHrkTumMM9oQxKHmzMHhEnhdk");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Corporate
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Sep 01, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        Monthly Sales Report: August 2023 Performance
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        Strong demand for electrified models drives growth across key global markets despite supply chain challenges.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Diverse group of volunteers planting trees in a park" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbOMkeJUqxdKYcI9AMWxt3S4XZBqayRg3rfutyqH0FPvZefJYVzHTOW2c0UdG2BLeaigOFe7tBYxD4tp0w_CbCM-Z_0Sz-jLBiUHiVxD6Qyt32qTmcwEsg9mBSWfqC8pz7Wz6yw62w8Q30RLtW1CuP5WXsFzoRufqcpuCKDk6j6H9iSF4NTYOCRMkK1EG8ykgy8nKl0qEOdc4POSCvxJTgeumMXkXnHQKGjn2auGSZ9mqaICnuXVh2RmkGFwX-BiTatGnUKAHTHbk");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Community
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Aug 24, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        Honda Cares: Expanding Green Initiatives Globally
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        Our continued commitment to environmental stewardship through local community tree planting and cleanup events.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Close up detail of a modern hybrid car engine bay" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPkEMWuOjPo-J8oK8P8jiw_cA2QAxy5p4PflxK57YDYaqf9fZEQO_pPbcz4C8kZ8DrHJO8o4CSjis1Ace1qGm3GSdf0gM6-_pti3059vds0a5wg-iYB9mmE3wORwaHn35x9WAl626NL5YPiAgi9H6aKU4bf9eYHPmv42MQfMN0SJS25NOdhrY44a4fAMOWoxpaUznP40L_3Tt4Bbk_QvH4EYrKHqE7j3ELFQpFB9XVoXP9Ir9xSCSkzag-goRmJil5alXSPWenvOw");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Technology
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Aug 10, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        Deep Dive: The e:HEV Hybrid System Explained
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        Understanding the dual-motor technology that powers our most efficient vehicles, delivering smooth acceleration and economy.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="flex flex-col group bg-white dark:bg-zinc-900 rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-800 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-video w-full bg-gray-200 overflow-hidden relative">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Golden trophy award on a shelf with blurred background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFU_CWw4xKWtghKkAnWW0lOkF2Z0gcXG2ka2L65Dr6TgevIRh1V3mynaIoKDvSIf-dIB3waG85SJTAOrPdkwG-wotR-MhPk6jwnZUfBbQPc8r9a4mu0EyLOWFpRts3eKWEbDZRw_URf334ruLlNlucUh01z7EZlEeIJx5O-ZUIoo6IZiDCLnxbbFg_co4SAEhqRagkkcPshZPXYe69gqSnILxOn_59As9a0TdwVZz9K3d62K4T8cr8i2G_0WmypLgapCIfls5XaZU");'>
+</div>
+<div class="absolute top-4 left-4 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded text-xs font-bold text-primary dark:text-white uppercase tracking-wider">
+                        Awards
+                    </div>
+</div>
+<div class="flex flex-col flex-1 p-5">
+<div class="text-gray-500 dark:text-gray-400 text-xs font-medium mb-3">Jul 30, 2023</div>
+<h4 class="text-lg font-bold text-primary dark:text-white leading-snug mb-3 group-hover:text-honda-red transition-colors">
+                        Accord and CR-V Win Best Resale Value Awards
+                    </h4>
+<p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-2">
+                        Recognized for long-term reliability and value retention in their respective segments by top automotive evaluators.
+                    </p>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-zinc-800">
+<a class="inline-flex items-center text-sm font-semibold text-primary dark:text-white hover:text-honda-red transition-colors" href="#">
+                            Read More <span class="material-symbols-outlined text-base ml-1">chevron_right</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center mb-12">
+<nav aria-label="Pagination" class="flex items-center gap-2">
+<a class="flex items-center justify-center size-10 rounded-lg border border-gray-200 dark:border-zinc-700 text-gray-500 hover:bg-gray-100 dark:hover:bg-zinc-800 dark:text-gray-400 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</a>
+<a class="flex items-center justify-center size-10 rounded-lg bg-honda-red text-white font-bold shadow-md" href="#">1</a>
+<a class="flex items-center justify-center size-10 rounded-lg border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-800 font-medium transition-colors" href="#">2</a>
+<a class="flex items-center justify-center size-10 rounded-lg border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-800 font-medium transition-colors" href="#">3</a>
+<span class="flex items-center justify-center size-10 text-gray-400">...</span>
+<a class="flex items-center justify-center size-10 rounded-lg border border-gray-200 dark:border-zinc-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-800 font-medium transition-colors" href="#">8</a>
+<a class="flex items-center justify-center size-10 rounded-lg border border-gray-200 dark:border-zinc-700 text-gray-500 hover:bg-gray-100 dark:hover:bg-zinc-800 dark:text-gray-400 transition-colors" href="#">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</a>
+</nav>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-16 pb-8 border-t border-gray-800">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Logo & Social -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-3">
+<div class="size-8 flex items-center justify-center bg-white rounded-full text-primary">
+<span class="font-black text-xl tracking-tighter">H</span>
+</div>
+<span class="text-xl font-bold tracking-tight">Honda News</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        The Power of Dreams. Bringing joy to customers worldwide through our products and technologies.
+                    </p>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="size-5" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.468 2.373c.636-.247 1.363-.416 2.427-.465C8.901 1.86 9.256 1.849 11.685 1.849h.63zm.084 1.849c-2.41 0-2.744.01-3.799.059-1.006.046-1.552.217-1.916.359a2.981 2.981 0 00-1.11.723 2.981 2.981 0 00-.723 1.11c-.142.364-.313.91-.359 1.917-.049 1.055-.059 1.389-.059 3.8v.66c0 2.41.01 2.744.059 3.799.046 1.006.217 1.552.359 1.916.225.578.534 1.05 1.11 1.63.576.576 1.05.885 1.63 1.11.364.142.91.313 1.917.359 1.055.049 1.389.059 3.8.059h.66c2.41 0 2.744-.01 3.799-.059 1.006-.046 1.552-.217 1.916-.359a2.981 2.981 0 001.11-.723 2.981 2.981 0 00.723-1.11c.142-.364.313-.91.359-1.917.049-1.055.059-1.389.059-3.8v-.66c0-2.41-.01-2.744-.059-3.799-.046-1.006-.217-1.552-.359-1.916a2.981 2.981 0 00-1.11-1.63 2.981 2.981 0 00-1.63-1.11c-.364-.142-.91-.313-1.917-.359-1.055-.049-1.389-.059-3.8-.059h-.66zM12.441 6.81a5.19 5.19 0 110 10.38 5.19 5.19 0 010-10.38zm0 1.849a3.341 3.341 0 100 6.682 3.341 3.341 0 000-6.682zm5.787-4.73a1.233 1.233 0 110 2.466 1.233 1.233 0 010-2.466z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-lg">Company</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Careers</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Sustainability</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Investors</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Worldwide</a></li>
+</ul>
+</div>
+<!-- Column 3 -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-lg">Newsroom</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Press Releases</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Media Library</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Contacts</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">RSS Feeds</a></li>
+</ul>
+</div>
+<!-- Column 4 -->
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold text-lg">Legal</h4>
+<ul class="flex flex-col gap-3">
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Terms of Use</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Cookie Policy</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Accessibility</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 text-xs text-center md:text-left">
+                    © 2024 Honda Motor Co., Ltd. All Rights Reserved.
+                </p>
+<p class="text-gray-600 text-xs text-center md:text-right">
+                    Vehicle images are for illustration purposes only.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

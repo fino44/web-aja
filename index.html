@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Honda Home Page</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "honda-red": "#CC0000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#141414] antialiased overflow-x-hidden">
+<!-- Navbar -->
+<!-- Modified to use Honda Red background and white text -->
+<header class="bg-red-700 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <span class="text-xl">HONDA</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-white font-medium">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="kedua.html" class="hover:underline">Product</a>
+        <a href="ketiga.html" class="hover:underline">Video</a>
+        <a href="keempat.html" class="hover:underline">News</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <label class="hidden md:flex flex-col min-w-40 h-10 w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white overflow-hidden shadow-sm">
+            <div class="text-[#757575] flex items-center justify-center pl-3">
+              <span class="material-symbols-outlined text-[20px]">search</span>
+                </div>
+                <input class="flex w-full flex-1 bg-transparent border-none focus:ring-0 text-primary text-sm font-medium px-2 h-full placeholder:text-[#999]" placeholder="Search models..."/>
+                </div>
+                </label>
+                <div class="flex gap-2">
+                </div>
+                </div>
+                </div>
+                </div>
+        <!-- Mobile Button -->
+               
+        </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-red-800">
+    <a href="index.html" class="block px-4 py-3 text-white">Home</a>
+    <a href="kedua.html" class="block px-4 py-3 text-white">Product</a>
+    <a href="ketiga.html" class="block px-4 py-3 text-white">News</a>
+    <a href="keempat.html" class="block px-4 py-3 text-white">Video</a>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden')
+  }
+</script>
+<!-- Hero Section -->
+<section class="w-full bg-white">
+<div class="flex justify-center">
+<div class="w-full max-w-[1280px]">
+<div class="@container">
+<div class="p-0">
+<div class="relative flex min-h-[500px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-center px-6 py-10 lg:px-20 lg:min-h-[600px]" data-alt="Cinematic shot of a Honda sports motorcycle on a blurred city street at night" style='background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAISH3x80BQ8KSMXrslXlGVUU_GzJeALU9WtrIY_wECEQK_tl0A7BM_xvVRwmsMmGmXClrZMHaAYfzFAu4TJTpV_k-y1iqLtJ3HGBqvq30z5HOn4VCnQCA9WTWjvXRQjpoNzk3dDpE24y7abBdpNxuDbryEVU29LeT12iodNa6WULc3x0psP84b9v3Dr8U5kLH5_pbtXaTykZ6tgyH6Curo_yyL1aFrm8Ag0BjS8EM_oR43vbs4X91lGyTbFqYf9DXhNNScs86nSuw");'>
+<div class="flex flex-col gap-4 text-left max-w-xl">
+<span class="inline-block px-3 py-1 bg-[#CC0000] text-white text-xs font-bold uppercase tracking-wider rounded w-fit">New Release</span>
+<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] lg:text-7xl">
+                                    Ride the Future
+                                </h1>
+<h2 class="text-gray-200 text-lg font-medium leading-relaxed max-w-md">
+                                    Experience unparalleled innovation and performance with our latest CBR series. Built for the track, ready for the street.
+                                </h2>
+<div class="pt-4 flex gap-4">
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-[#CC0000] text-white text-base font-bold leading-normal tracking-wide hover:bg-[#a30000] transition-colors shadow-lg shadow-red-900/20">
+                                        Lihat Detail
+                                    </button>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-transparent border-2 border-white text-white text-base font-bold leading-normal tracking-wide hover:bg-white hover:text-black transition-colors">
+                                        Test Ride
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<canvas style="width: 544px; font-size: 0px; height: 344.32px;" width="544" height="344"></canvas>
+<!-- Product Selection Section -->
+<section class="w-full py-12 lg:py-16 bg-[#f8f9fa]">
+<div class="flex justify-center px-4">
+<div class="flex flex-col w-full max-w-[1280px]">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row justify-between items-end mb-8 px-2">
+<div class="flex flex-col">
+<h2 class="text-[#141414] text-3xl md:text-4xl font-black leading-tight tracking-[-0.02em]">Pilih Motor Honda<br/>Favorit Anda</h2>
+<div class="h-1 w-20 bg-[#CC0000] mt-3"></div>
+</div>
+<a class="text-[#CC0000] font-bold text-sm flex items-center gap-1 mt-4 md:mt-0 hover:gap-2 transition-all" href="#">
+                        Lihat Semua Produk <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Tabs -->
+<div class="mb-8">
+<div class="flex border-b border-[#e0e0e0] gap-8 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#CC0000] text-[#CC0000] pb-[13px] pt-4 min-w-[60px]" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">All</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#757575] hover:text-[#141414] pb-[13px] pt-4 min-w-[60px]" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Matic</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#757575] hover:text-[#141414] pb-[13px] pt-4 min-w-[60px]" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Sport</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#757575] hover:text-[#141414] pb-[13px] pt-4 min-w-[60px]" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Cub</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#757575] hover:text-[#141414] pb-[13px] pt-4 min-w-[60px]" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">EV</p>
+</a>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-contain bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Side profile of a white Honda PCX 160 scooter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2m7EX903kscVDoEoX3XnIzT1i3O4GAgU1NB8NY4RqK-D3Nz55dc0TPHPTZr23pemovRT-fHOV7aih8Lg_MpWzmBV8aWCDUMcw9GfPJoLf3yweP79l1DuuGCLpww1BI1SzUt-H9fIlvbRzlZef64VKKhTllKK4E7STe-G6WWjmjbAJiOmXVppKzRvohC2PvlxOHLOgEr-kJiH4fwaaPLLIH6795UmXdOpJISOPUurb-tc-J0FVX0UoVg3aClcirUmtVd7RbHLwnTc");'></div>
+<div class="absolute top-3 right-3 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Matic</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-2">
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">160cc</p>
+<h3 class="text-[#141414] text-xl font-bold leading-tight group-hover:text-[#CC0000] transition-colors">PCX 160</h3>
+</div>
+<div class="mt-auto pt-4 border-t border-dashed border-gray-200">
+<p class="text-[#757575] text-xs font-normal mb-1">Starting at</p>
+<p class="text-[#141414] text-lg font-bold">Rp 32.670.000</p>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Red Honda CBR 250RR sport bike on a track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDY12JjBbi3ZnTbxMCs4YgmEyflfS8yYQ5n2xOuKgqeRZ7aC6X8dFaFSwmeS_gQ1hU-you2EohaOE70oaipX3Ti5umDqXTf_hs3kSKZjQoosWuc3gzMnOhBJHmUzsqnwFTWHHZ4Xx76B4SwxhVgkdOqAE1LEMPBcrEyZhKF39buVU1tBlzzGdocsMADHdNeTe1sU5szBtjiByLE6mbEIjd_Qr0Y9yWAGlKftTeT4xAS7PEd0VhPI2Lf7nQ6mEjAqWHMr1W3VfeHF8");'></div>
+<div class="absolute top-3 right-3 bg-[#CC0000] text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Sport</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-2">
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">250cc</p>
+<h3 class="text-[#141414] text-xl font-bold leading-tight group-hover:text-[#CC0000] transition-colors">CBR 250RR</h3>
+</div>
+<div class="mt-auto pt-4 border-t border-dashed border-gray-200">
+<p class="text-[#757575] text-xs font-normal mb-1">Starting at</p>
+<p class="text-[#141414] text-lg font-bold">Rp 63.456.000</p>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Black Honda Beat street scooter parked" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCm1Mq3a1hgLKKc6LvisToMWsepUAJOWgERfxV0TcUAFkbgGegTM3YHNpI9U26peOoXgCR-PcA-RXlM6I27EZj0FZABvyoDfPs0ON-AUbuPzmGWLREVEafZGYubbopdhEqLHBBIoE-BSxCxQmLBxRLfmsVwwo3dpXwj2o-20Z025XVCqOEM61UNWKxX1Zj4AgFrW3UC6lgR8j9TcHVrj56NYzt0OpWwQ32G8Oh025VfzCOUqlM8-3iXxU6z9VChOMFzqTF9sCOKMUI");'></div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-2">
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">110cc</p>
+<h3 class="text-[#141414] text-xl font-bold leading-tight group-hover:text-[#CC0000] transition-colors">BeAT Street</h3>
+</div>
+<div class="mt-auto pt-4 border-t border-dashed border-gray-200">
+<p class="text-[#757575] text-xs font-normal mb-1">Starting at</p>
+<p class="text-[#141414] text-lg font-bold">Rp 18.700.000</p>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-cover bg-no-repeat group-hover:scale-105 transition-transform duration-500" data-alt="Matte black Honda Vario 160 front view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLW_S2LY95Z2rdbVcuA9MKmSQE_w212baB9N7HLp_t8E8g8eAWQ_lh13jvB_RaGBvIzNBa4H2cMA2eSuv4wv62STy4o5CIgh7hSDcjMGtiarMU4Oe9RulguvJF6YXCK1ocWxxKSeMgqAILvB2XgiY0s11m6ATfzQF39SF2FhdovBnDnn3oQPjRslzXx7kMSQf57zgy5VsUK27O8SsFgscxnKkv8GKXVEdIniOnKHicc7HPxnEnpCN7_IE_qQFP6UN-SfKBntVUnR4");'></div>
+<div class="absolute top-3 right-3 bg-black/80 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">New</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="mb-2">
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">160cc</p>
+<h3 class="text-[#141414] text-xl font-bold leading-tight group-hover:text-[#CC0000] transition-colors">Vario 160</h3>
+</div>
+<div class="mt-auto pt-4 border-t border-dashed border-gray-200">
+<p class="text-[#757575] text-xs font-normal mb-1">Starting at</p>
+<p class="text-[#141414] text-lg font-bold">Rp 26.639.000</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- News & Racing Highlights -->
+<section class="w-full py-12 lg:py-16 bg-white border-t border-[#f2f2f2]">
+<div class="flex justify-center px-4">
+<div class="flex flex-col w-full max-w-[1280px]">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 px-2">
+<div class="flex flex-col">
+<h2 class="text-[#141414] text-3xl md:text-4xl font-black leading-tight tracking-[-0.02em]">Honda Updates</h2>
+<div class="h-1 w-20 bg-[#141414] mt-3"></div>
+</div>
+<a class="text-[#141414] font-bold text-sm flex items-center gap-1 mt-4 md:mt-0 border-b-2 border-transparent hover:border-[#141414] transition-all" href="#">
+                        View All News
+                    </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- News Item 1 -->
+<article class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Racing motorcycle leaning into a curve on a race track" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBszcjuug45dyQz5r9zu9AP9S6x5RsA1mTpi-Il3h4mA6Vsn9X6hSO4l75x2PALGjKlSxDK_DQzcP5j0KJa65QVvKmv73pFSB6tjeVpby0m6kqx1HLCNkbHKTBNM1eM21I6-bJE_InaqAT40mxIyosdER3kTajNA_e2FdfWrQl4GBhyK6RCZN7xppnUpKONK8_kwBkQUFrlX26uKlWwUIyx7ZLgHH8yegacAwIpHMHXGrz8U60Yh9aAiIBgvqRi_9_-VHh5iDFNVQQ");'>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-wider bg-[#CC0000] px-2 py-1 rounded">Racing</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[#757575] text-xs font-semibold">12 October 2024</span>
+<h3 class="text-[#141414] text-xl font-bold leading-snug group-hover:text-[#CC0000] transition-colors">Honda Racing Team Secures Podium Finish in Mandalika</h3>
+<p class="text-[#757575] text-sm leading-relaxed line-clamp-2">An incredible performance by our riders showcasing the dominance of the new CBR engine technology.</p>
+</div>
+</article>
+<!-- News Item 2 -->
+<article class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Futuristic electric scooter charging in a modern garage" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCo_Buxuo8A3k6DoMWBDhzhhv6R5_ehHDhdeF137ixr381kIp9TuIGCVvuC-_v5lLzZfFpE06FTeZm-LHm9FgiYTJsRWzsPneCT48gjXeRr2atwMfz6zSYwGjvip1fNeSpDkJ9u9bADfPtUKd7_U9MyKOJcfpQUg3-3_pfc9YGL-KjYcd4klMdDVOIbIXT24nfDOIGMqDdPEGEYDFgUJ6emcbMONVR9rb3BhqXkZQgMa3ceDY23-9SNgOcf7E1Pp-fQ6SQF6M5DRP4");'>
+</div>
+<div class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-wider bg-black px-2 py-1 rounded">Technology</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[#757575] text-xs font-semibold">05 October 2024</span>
+<h3 class="text-[#141414] text-xl font-bold leading-snug group-hover:text-[#CC0000] transition-colors">Introducing the New e:HEV Technology for Urban Mobility</h3>
+<p class="text-[#757575] text-sm leading-relaxed line-clamp-2">A sustainable step forward. Learn how our new electric hybrid systems are changing the way we ride.</p>
+</div>
+</article>
+<!-- News Item 3 -->
+<article class="flex flex-col gap-4 group cursor-pointer">
+<div class="w-full aspect-video rounded-lg overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Group of motorcycle riders gathering at a sunset event" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_eQf86rbw2IdFbQ8NelRDjeWEnR-kQ6AAxI8GMwLpeeAMvFvrIvseUoxziKS6z_AEZn8DHWTzwEugXl0AodZvrCc6kuxK9G-I1PTqcoCkLU3aB2rUrgsI1gw0s9GwbNY041XdLsB0agrQDDPjObplnoRqcE05h7xaJHp9e57X6TEEvK5CbS6fJbF9ZBMWRfAkHo8p2JkFWBs2OCbU-wxTMwMiRSrv9qnXX6bNTgAObxcRnvAoVd71-MlUI3u3Jt8YDKW7BnEKjMk");'>
+</div>
+<div class="absolute bottom-4 left-4 text-white text-xs font-bold uppercase tracking-wider bg-blue-600 px-2 py-1 rounded">Community</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-[#757575] text-xs font-semibold">28 September 2024</span>
+<h3 class="text-[#141414] text-xl font-bold leading-snug group-hover:text-[#CC0000] transition-colors">Honda Day 2024: Celebrating Our Community</h3>
+<p class="text-[#757575] text-sm leading-relaxed line-clamp-2">Thousands of riders gathered to celebrate brotherhood and passion for two wheels.</p>
+</div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Section -->
+<section class="w-full bg-[#141414]">
+<div class="flex flex-col items-center justify-center py-20 px-4">
+<div class="w-full max-w-[1280px] flex flex-col gap-8">
+<div class="text-center">
+<h2 class="text-white text-3xl md:text-5xl font-black leading-tight tracking-[-0.02em] mb-4">Experience the Thrill</h2>
+<p class="text-gray-400 max-w-2xl mx-auto">Witness the engineering marvel and the spirit of competition that drives us forward every single day.</p>
+</div>
+<div class="w-full aspect-video rounded-xl overflow-hidden relative group cursor-pointer border border-white/10 shadow-2xl">
+<div class="w-full h-full bg-cover bg-center opacity-60 group-hover:opacity-40 transition-opacity duration-300" data-alt="Blurred action shot of a motorcycle race track with motion blur" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAw3GEaby5I1AiHFck8iWbTvEInmSOkuOvYKMMsYddMyC2cYp1HIO5-IuT4S_033m8-GWx2vZY5E5FSCCZTZJwHD79SMD_GBa3IlS92-7v0cxA8DnW9da84vu92z6wN1h31pfyaFFn6S9MxsAV7ta6PtKOGmy9H-Nc33jjsXgGVUuz6TYslbhBT1DwHK2XoxfunsQwicQSecWcIUYG9BjIo-yksQE_DI48lt_YCUAx1urpf6YbCRozjpfMWuyWDOV6UZu5_h9Jp1Mk");'>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-20 rounded-full bg-[#CC0000] flex items-center justify-center shadow-[0_0_30px_rgba(204,0,0,0.6)] group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-white text-[40px] ml-1">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#141414] text-white pt-16 pb-8 border-t border-white/10">
+<div class="flex justify-center px-6 lg:px-10">
+<div class="w-full max-w-[1280px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand Column -->
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2 text-white">
+<div class="size-6">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Honda</h2>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                            PT Astra Honda Motor<br/>
+                            Jl. Laksda Yos Sudarso - Sunter 1<br/>
+                            Jakarta 14350, Indonesia
+                        </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-[#CC0000] transition-colors text-white" href="#">
+<!-- Facebook Icon Placeholder using text -->
+<span class="font-bold text-xs">FB</span>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-[#CC0000] transition-colors text-white" href="#">
+<!-- Instagram Icon Placeholder using text -->
+<span class="font-bold text-xs">IG</span>
+</a>
+<a class="w-8 h-8 flex items-center justify-center rounded bg-white/10 hover:bg-[#CC0000] transition-colors text-white" href="#">
+<!-- Twitter Icon Placeholder using text -->
+<span class="font-bold text-xs">X</span>
+</a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-bold mb-2">Products</h3>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Matic</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Sport</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Cub</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">EV</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Big Bike</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-bold mb-2">Support</h3>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Find a Dealer</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Service Booking</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Spare Parts</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Contact Us</a>
+<a class="text-gray-400 hover:text-white text-sm transition-colors" href="#">Warranty Info</a>
+</div>
+<!-- Newsletter -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-bold mb-2">Stay Updated</h3>
+<p class="text-gray-400 text-sm mb-2">Subscribe to our newsletter for the latest updates.</p>
+<div class="flex gap-2">
+<input class="bg-white/10 border-none rounded text-sm text-white px-3 py-2 w-full focus:ring-1 focus:ring-[#CC0000]" placeholder="Your email" type="email"/>
+<button class="bg-[#CC0000] hover:bg-[#b30000] text-white px-4 py-2 rounded text-sm font-bold transition-colors">Go</button>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-gray-500 text-xs">Copyright © 2024 Astra Honda Motor. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-gray-500 hover:text-white text-xs transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-white text-xs transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-white text-xs transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

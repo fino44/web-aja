@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Honda Product Lineup</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#141414",
+                        "brand-red": "#CC0000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-primary dark:text-white flex flex-col min-h-screen">
+<!-- Top Navbar (Modified to Honda Red Style) -->
+<header class="bg-red-700 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-2 text-white font-bold text-lg">
+        <span class="text-xl">HONDA</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-white font-medium">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="kedua.html" class="hover:underline">Product</a>
+        <a href="ketiga.html" class="hover:underline">Video</a>
+        <a href="keempat.html" class="hover:underline">News</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <label class="hidden md:flex flex-col min-w-40 h-10 w-64">
+          <div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-white overflow-hidden shadow-sm">
+            <div class="text-[#757575] flex items-center justify-center pl-3">
+              <span class="material-symbols-outlined text-[20px]">search</span>
+                </div>
+                <input class="flex w-full flex-1 bg-transparent border-none focus:ring-0 text-primary text-sm font-medium px-2 h-full placeholder:text-[#999]" placeholder="Search models..."/>
+                </div>
+                </label>
+                <div class="flex gap-2">
+                </div>
+                </div>
+                </div>
+                </div>
+              
+      
+        
+        <!-- Mobile Button -->
+        <button id="menuBtn" class="md:hidden text-white text-2xl">
+          ☰
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-red-800">
+    <a href="index.html" class="block px-4 py-3 text-white">Home</a>
+    <a href="kedua.html" class="block px-4 py-3 text-white">Product</a>
+    <a href="ketiga.html" class="block px-4 py-3 text-white">News</a>
+    <a href="keempat.html" class="block px-4 py-3 text-white">Video</a>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden')
+  }
+</script>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<!-- Page Heading -->
+<div class="mb-8">
+<h2 class="text-primary dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-2">Choose Your Ride</h2>
+<p class="text-[#757575] text-lg font-normal">Experience the power of dreams with our latest collection.</p>
+</div>
+<!-- Filter Tabs -->
+<div class="mb-8 border-b border-[#e0e0e0]">
+<div class="flex gap-8 overflow-x-auto pb-px">
+<a class="relative flex flex-col items-center justify-center pb-4 min-w-[60px] cursor-pointer group" href="#">
+<p class="text-primary dark:text-white text-sm font-bold tracking-wide">All</p>
+<span class="absolute bottom-0 h-[3px] w-full bg-[#CC0000]"></span>
+</a>
+<a class="relative flex flex-col items-center justify-center pb-4 min-w-[60px] cursor-pointer group" href="#">
+<p class="text-[#757575] hover:text-primary dark:hover:text-white transition-colors text-sm font-bold tracking-wide">Matic</p>
+<span class="absolute bottom-0 h-[3px] w-full bg-transparent group-hover:bg-gray-300 transition-colors"></span>
+</a>
+<a class="relative flex flex-col items-center justify-center pb-4 min-w-[60px] cursor-pointer group" href="#">
+<p class="text-[#757575] hover:text-primary dark:hover:text-white transition-colors text-sm font-bold tracking-wide">Sport</p>
+<span class="absolute bottom-0 h-[3px] w-full bg-transparent group-hover:bg-gray-300 transition-colors"></span>
+</a>
+<a class="relative flex flex-col items-center justify-center pb-4 min-w-[60px] cursor-pointer group" href="#">
+<p class="text-[#757575] hover:text-primary dark:hover:text-white transition-colors text-sm font-bold tracking-wide">Cub</p>
+<span class="absolute bottom-0 h-[3px] w-full bg-transparent group-hover:bg-gray-300 transition-colors"></span>
+</a>
+<a class="relative flex flex-col items-center justify-center pb-4 min-w-[60px] cursor-pointer group" href="#">
+<p class="text-[#757575] hover:text-primary dark:hover:text-white transition-colors text-sm font-bold tracking-wide">EV</p>
+<span class="absolute bottom-0 h-[3px] w-full bg-transparent group-hover:bg-gray-300 transition-colors"></span>
+</a>
+</div>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Red sport motorcycle side profile studio shot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMNgKqDJlwroS9oh_ACmhg0EMypzJIUAvBY_rQ3DoUMFyuB2MZm7h5kfbZDwaKGgt-E87zcCXw0rRCc_Sj0n6MNjSJwK-xLjyDeN95BYDStJ-jBkVvBovXphCXbkb7ql5POYCQJuuA_kSDzGK0eCrXDdk3oNuctSWGILTywxwJDHCTOk0tcG3P5gWLVa-eLNiZjeJm_SryTuknVLCVLri9GV9pteaTRusld3A-0Mku4kYSsMRHacrWz1w9vF9giDuUEsw_VoAX_-Q");'></div>
+<div class="absolute top-3 right-3 bg-[#CC0000] text-white text-xs font-bold px-2 py-1 rounded">New</div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Sport</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">CBR150R</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 36.000.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="White premium scooter front angle view" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDmhUHj7ixqwOZRFvdByVfBeqFZbPSYmzpQ6HLc9bTTdUSbh-Nqag4138f8A4p6K7jYabwEdRHW94kIBF4zGSm9dqIqt3T1Eb2xHUs8hyR18N2PXu4hPLNmPS5o073ZonZJlCqnBw76rnW2x8We2_pe7c5oNrEi8eGSY3Bu1dJcaCWHRqMgeq2bnl-GzFYI6IjubR7XdMWMpUp3-FALC1SxuCl0GGPvVmHAowM5lesu_Hz2jRocOGSGRTMP0Haxg3OQWtMa0q9I4Bw");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Matic</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">PCX160</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 32.600.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Black compact scooter urban street style" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1AbIft4nU84i2MQlDq5WIXTs9XecK6wTkaDRYhuLBkZHGYlVSVIM77zqgW1EHKbWQpqkZPPSqulirRkygzZPdq9wysy9wfgI9vBJuBnPTu0GTBuewL7Ne5xRrH_Bok5XdopH7tCzcoGxJdmDBEEbDsXIdmLLOMmhuiiGPMCdUU43g37EiqWqhzwk5VfaWxqLaOWe28taBKuTNXd9BtMzean1s0i87YXO_b4EzkeeKJDY_62ZTX18n99ZFOIjnm_R6dsvxYzT8ScU");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Matic</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">BeAT Street</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 18.700.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Red dirt bike offroad style" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1mcoXjzL4ETGz1q22IuNiqDLkKLbkfL6o72p58JuKwgS-tIKBLXUhaGBq7tF8Y5we9h_I2BgppLkvqlIJfT73ecCbrnbLEGa6lPXP9e7lcZmgd5_lg-uZMhYgs-u5IrOHtrIfF_RpksMi3tTCGrfImc7HCZSGA8EvbDWXCVZ8ZrfHH_it9F2yNQwRLjZW2kkt9T7w-kioo2GABduP82iQ9Urk-t6Q69Tmysv5xrZxtWh3Xp2Fmg8EGSZ69C2hPO6mzSWGPoEY2vQ");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Sport</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">CRF150L</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 35.900.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern blue scooter sharp angles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMtLTYmTg8pYl-uPjWtKOq3wtf1JwbGNJd4mzxfVlZu3l18_-voEsVfQLWW508_KrnHNdtcprZjC0cNgzvXdAqYMleCR5IZv4xpgfj9oJSElEsMrvaL6yCVtuIKXQ4RziaR0HilRpPDMQ_-qD9G2dKb1JQ-NmS71gtenX8gJz0_OBX-kbbCzIIzzgsxavBjCgKVl0ovS4X9gco2Lcu0xeeZXVQFTgG_0hgZVep2LMRHXYxGoGf73MhtafsWm1pk-1BBHSEtho2wnE");'></div>
+<div class="absolute top-3 right-3 bg-[#CC0000] text-white text-xs font-bold px-2 py-1 rounded">Best Seller</div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Matic</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">Vario 160</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 26.500.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Retro style pink scooter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSxmfqG722-I38wlymOJRQeFAKnk5eAVTj6d-jSWd51x5wlpsK1UrJGEw3LKl3d02Nzau5uw1afp7IXNJydkLcn3aSfGcWsEoC--9SDc5KLB5XcLq9bEMLASfrsYh_mKwsu7i6oPt7-pbJ3Ia4OUJfCVT8VX4W2Ki-fHLxVy_oOIzZlqzrp62lStOadHGyrjEWEFdHlDDI4LnbfTe99sUnFtmdkkq0qK0_bz9GEQxIZqx4xygqTzzFjHda2LotrnBGrHFD1mhsBz0");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Matic</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">Genio</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 19.100.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic underbone motorcycle black and red" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDhFzXnsQ2bTIwF525EYm9MXt2kMjKo5rwYZ8oOZSPrF8wpEHVMuWfLzSqIdk_Mcx5cjaYJGgY42LvgCS4YCESSCypzyzmwbeNB2ugNzHalTBd7vnoRfKiAEZgJVODZ7J4hxVws1l0gR8fD7fkq4mx7lEIf3THRdg5tXMeX93DErS09EjxC9ZgjGYJii3uv_-9KEaWAAAnKl7aQ3eOoCbYiI5u6UR6usO8d2WLTgvZDMb0_PxrbaXvIefcWIZ77k3v4jsN2YKjLAec");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Cub</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">Supra X 125</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 19.100.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group bg-white dark:bg-[#252525] rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-[#333] flex flex-col">
+<div class="aspect-[4/3] relative overflow-hidden bg-gray-100">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Big sport bike with fairings" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTesqhEnQqyD_LWHapS70OFG6PJJrh_TyaPUIlWMzvRrGgKT-S0HWH9EFG08u0xD-WplmwFERa4e8LZ1s11FoBVyNPLfO1D7eQBzVX2J9YGDfBJMc6OlA8VgB3kC7vgUa7038Fy0TwaZgTlXXUiupd08rGLs6sFMU0VUP7Ex_UcZ0IeeWhkBl236mXlEnJPpnzN8C-4Nwv3HGvbQ_BdtZlHdfhkUVAXHXe9CYnVBlO0xksjJl2xXWzLmhF0BI2MG6xtWonlqMIRak");'></div>
+</div>
+<div class="p-5 flex flex-col gap-3 flex-1">
+<div>
+<p class="text-[#757575] text-xs font-bold uppercase tracking-wider mb-1">Sport</p>
+<h3 class="text-primary dark:text-white text-xl font-black leading-tight">CBR250RR</h3>
+</div>
+<p class="text-[#CC0000] text-lg font-bold">Rp 63.400.000</p>
+<div class="mt-auto pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-white text-sm font-bold hover:bg-gray-800 transition-colors flex items-center justify-center gap-2">
+                            View Details
+                            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="px-8 py-3 bg-transparent border-2 border-primary dark:border-white text-primary dark:text-white rounded-lg font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-primary transition-all">
+                Load More Models
+            </button>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-white border-t border-[#333]">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Brand Info -->
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-4">
+<div class="size-6">
+<svg class="text-white w-full h-full" fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 42.4379C4 42.4379 14.0962 36.0744 24 41.1692C35.0664 46.8624 44 42.2078 44 42.2078L44 7.01134C44 7.01134 35.068 11.6577 24.0031 5.96913C14.0971 0.876274 4 7.27094 4 7.27094L4 42.4379Z"></path>
+</svg>
+</div>
+<span class="text-xl font-black tracking-tighter uppercase italic">Honda</span>
+</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+                        PT Astra Honda Motor <br/>
+                        Jl. Laksda Yos Sudarso - Sunter 1 <br/>
+                        Jakarta 14350, Indonesia <br/>
+                        Tel. 1-500-989
+                    </p>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-bold text-lg mb-4">Corporate</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Career</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Press Release</a></li>
+</ul>
+</div>
+<!-- Support -->
+<div>
+<h4 class="font-bold text-lg mb-4">Support</h4>
+<ul class="space-y-3 text-sm text-gray-400">
+<li><a class="hover:text-white transition-colors" href="#">Contact Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Find a Dealer</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Spare Parts</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Safety Riding</a></li>
+</ul>
+</div>
+<!-- Socials -->
+<div>
+<h4 class="font-bold text-lg mb-4">Follow Us</h4>
+<div class="flex gap-4">
+<a class="bg-[#333] hover:bg-brand-red size-10 rounded-full flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">thumb_up</span>
+</a>
+<a class="bg-[#333] hover:bg-brand-red size-10 rounded-full flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">photo_camera</span>
+</a>
+<a class="bg-[#333] hover:bg-brand-red size-10 rounded-full flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">chat_bubble</span>
+</a>
+<a class="bg-[#333] hover:bg-brand-red size-10 rounded-full flex items-center justify-center transition-colors text-white" href="#">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+</a>
+</div>
+</div>
+</div>
+<div class="border-t border-[#333] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+<p>Copyright © 2023 Astra Honda Motor. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Use</a>
+<a class="hover:text-white transition-colors" href="#">Sitemap</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
